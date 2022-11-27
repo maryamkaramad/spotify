@@ -1,12 +1,13 @@
-import { Grid } from "@mui/material"
-import Main from "../componens/main/Main"
-import Side from "../componens/main/Side"
+import { Grid, Typography } from "@mui/material"
+import Main from './../componens/main/Main';
+
+
 
 export default function Home() {
   return (
-    <Grid container width={"100%"} height={"100%"}>
-      <Side />
+    <Grid container xs={10}>
       <Main />
+
     </Grid>
 
   )

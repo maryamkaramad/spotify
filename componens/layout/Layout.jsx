@@ -7,7 +7,10 @@ const Layout = ({ children }) => {
     return (
         <Grid container xs={12}>
             <Side />
+
             {children}
+
+
 
             <Footer />
 

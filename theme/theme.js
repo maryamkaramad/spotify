@@ -17,9 +17,6 @@ export const theme = createTheme({
         subtitle: {
             fontSize: 16,
             lineHeight: 20.24,
-
-
-
         },
 
         subtitle1: {
@@ -33,6 +30,16 @@ export const theme = createTheme({
             fontWeight: 500,
             lineHeight: 15.18,
         },
+        subtitle3: {
+            fontSize: 16,
+            fontWeight: 700,
+            lineHeight: 24,
+        },
+        subtitle4: {
+            fontSize: 10,
+            fontWeight: 400,
+            lineHeight: 16,
+        }
 
     },
 })

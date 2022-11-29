@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Grid, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Header from '../../componens/onepage/Header';
@@ -6,6 +6,8 @@ import { datamaintop } from '../../data/datamaintop';
 import IMG1 from "../../public/assets/image/onepage/1.png"
 import IMG2 from "../../public/assets/image/onepage/2.png"
 import IMG3 from "../../public/assets/image/onepage/3.png"
+import TableContainer from '@mui/material/TableContainer';
+import Table from '@mui/material/Table';
 export default function item() {
   const router = useRouter()
   const id = router.query?.["item"]?.[0]
@@ -30,7 +32,35 @@ export default function item() {
         </Grid>
       </Grid>
       <Grid item xs={12}>
+        <TableContainer>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Dessert (100g serving)</TableCell>
+                <TableCell align="right">Calories</TableCell>
+                <TableCell align="right">Fat&nbsp;(g)</TableCell>
+                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
 
+              </TableRow>
+            </TableHead>
+            <TableBody>
+
+              <TableRow
+
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {1}
+                </TableCell>
+                <TableCell align="right">2</TableCell>
+                <TableCell align="right">3</TableCell>
+                <TableCell align="right">4</TableCell>
+                <TableCell align="right">5</TableCell>
+              </TableRow>
+
+            </TableBody>
+          </Table>
+        </TableContainer>
       </Grid>
     </Grid>
 

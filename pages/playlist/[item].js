@@ -1,6 +1,7 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Header from '../../componens/onepage/Header';
 import { datamaintop } from '../../data/datamaintop';
 import IMG1 from "../../public/assets/image/onepage/1.png"
 import IMG2 from "../../public/assets/image/onepage/2.png"
@@ -14,25 +15,7 @@ export default function item() {
     <Grid container xs={10} sx={{ background: "linear-gradient(180deg, #90AEA7 0%, #000000 89.7%)", color: "white" }} p={1} >
       <Grid item container xs={12} px={"2px"} >
         {data.map(item => (
-          <Grid item xs={12} display={"flex"} gap={1} alignItems={"center"} >
-            <Grid item width={"230px"} height={"230px"} >
-              <Image src={item.img} sx={{ boxShadow: "2", borderRadius: 4 }} style={{ opacity: 0.7, width: "100%", height: "100%" }} />
-            </Grid>
-            <Grid item display={"flex"} flexDirection={"column"} alignItems={"flex-start"} justifyContent={"flex-end"} >
-              <Grid item >
-                <Typography sx={{ fontSize: "11px" }}>PLAYLIST</Typography>
-              </Grid>
-              <Grid item >
-                <Typography sx={{ fontSize: "80px", }}>{item.title}</Typography>
-              </Grid>
-              <Grid item sx={{ fontSize: "14px" }} >
-                <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</Typography>
-              </Grid>
-              <Grid item >
-                <Typography>Spotify. 860,306. 100 song, 4hr 5min</Typography>
-              </Grid>
-            </Grid>
-          </Grid>
+          <Header item={item} />
         ))}
       </Grid>
       <Grid item xs={12} container alignItems={"center"} gap={3}>

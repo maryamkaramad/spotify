@@ -11,6 +11,15 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Logo from "../../public/assets/icon/Logo.png"
 const Side = () => {
+
+    const myStyle = {
+        "&:hover": {
+            border: "1px solid gray",
+            color: 'black',
+            backgroundColor: 'gray',
+            cursor: "pointer"
+        },
+    }
     return (
         <Grid item container xs={2} height={"100%"} flexDirection={"column"} alignItems={"center"} sx={{ backgroundColor: "black", color: "white" }} gap={60}  >
             <Grid item container p={2} lg={12} justifyContent={"flex-start"} flexDirection={"column"} alignItems={"center"} gap={6}>
@@ -24,15 +33,15 @@ const Side = () => {
                 </Grid>
                 <Grid item lg={12} container >
 
-                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={{ cursor: "pointer" }}>
+                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={myStyle}>
                         <Grid item ><IconButton><HomeIcon /></IconButton></Grid>
                         <Grid item  >  <Typography>Home</Typography></Grid>
                     </Grid>
-                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={{ cursor: "pointer" }}>
+                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={myStyle}>
                         <Grid item ><IconButton><SearchIcon /></IconButton></Grid>
                         <Grid item >  <Typography>Search</Typography></Grid>
                     </Grid>
-                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={{ cursor: "pointer" }}>
+                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={myStyle}>
                         <Grid item ><IconButton><LibraryMusicIcon /></IconButton></Grid>
                         <Grid item >  <Typography>YourLibrary</Typography></Grid>
                     </Grid>
@@ -41,7 +50,7 @@ const Side = () => {
                     <Typography> PLAYLISTS</Typography>
                 </Grid>
                 <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"}>
-                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={{ cursor: "pointer" }}>
+                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={myStyle}>
                         <Grid item ><IconButton><AddBoxIcon /></IconButton></Grid>
                         <Grid item >  <Typography>Create Playlist</Typography></Grid>
 
@@ -49,7 +58,7 @@ const Side = () => {
                     </Grid>
 
 
-                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={{ cursor: "pointer" }}>
+                    <Grid item container lg={12} justifyContent={"flex-start"} alignItems={"center"} sx={myStyle}>
                         <Grid item ><IconButton><FavoriteIcon /></IconButton></Grid>
                         <Grid item >  <Typography>Liked Songs</Typography></Grid>
 

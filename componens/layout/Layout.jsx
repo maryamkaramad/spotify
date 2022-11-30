@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
     return (
-        <Grid container xs={12} >
+        <Grid container xs={12} maxHeight={"1080px"}>
             <Side />
             {children}
             <Footer />

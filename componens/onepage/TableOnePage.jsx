@@ -6,7 +6,13 @@ import IMG3 from "../../public/assets/image/onepage/3.png"
 const TableOnePage = ({ item }) => {
     return (
         <TableRow key={item.id}
-            sx={{ '&:last-child td, &:last-child th': { border: 0 }, borderBottom: 0 }} style={{ cursor: "pointer" }} >
+            sx={{
+                '&:last-child td, &:last-child th': { border: 0 }, borderBottom: 0, "&:hover": {
+                    border: "1px solid gray",
+                    color: 'gray',
+                    backgroundColor: 'gray'
+                },
+            }} style={{ cursor: "pointer" }} >
             <TableCell component="th" scope="row" sx={{ borderBottom: 0 }} >
                 <Grid xs={12} display={"flex"} alignItems={"center"} color={"white"} justifyContent={"flex-start"} gap={2}>
                     <Grid  >

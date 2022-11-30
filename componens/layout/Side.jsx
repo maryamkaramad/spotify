@@ -12,7 +12,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Logo from "../../public/assets/icon/Logo.png"
 const Side = () => {
     return (
-        <Grid item container xs={2} height={"100%"} flexDirection={"column"} alignItems={"center"} sx={{ backgroundColor: "black", color: "white" }} gap={70}>
+        <Grid item container xs={2} height={"100%"} flexDirection={"column"} alignItems={"center"} sx={{ backgroundColor: "black", color: "white" }} gap={60}>
             <Grid item container p={2} lg={12} justifyContent={"flex-start"} flexDirection={"column"} alignItems={"center"} gap={6}>
                 <Grid item lg={12} justifyContent={"flex-start"} container sx={{ backgroundColor: "black", color: "white" }}>
                     <Image src={Logo}

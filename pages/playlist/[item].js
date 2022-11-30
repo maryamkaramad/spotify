@@ -17,7 +17,7 @@ export default function item() {
   const data = datamaintop.filter(item => item.id == id)
   const mystlye = { color: "white" }
   return (
-    <Grid container xs={10} sx={{ background: "linear-gradient(180deg, #90AEA7 0%, #000000 89.7%)", color: "white" }} p={1} gap={2} >
+    <Grid container xs={12} md={10} sx={{ background: "linear-gradient(180deg, #90AEA7 0%, #000000 89.7%)", color: "white" }} p={1} gap={2} >
       <Grid item container xs={12} px={"2px"} my={6}>
         {data.map(item => (
           <Header item={item} />
@@ -49,11 +49,6 @@ export default function item() {
               {datOnePage.map(item => (
                 <TableOnePage item={item} />
               ))}
-
-
-
-
-
             </TableBody>
           </Table>
         </TableContainer>
